@@ -1,0 +1,12 @@
+import './js/fetch';
+import './js/module-1';
+import './js/module-2';
+import './js/module-3';
+import './js/module-4';
+import './js/module-5';
+import './js/module-6';
+import './js/module-7';
+import './js/module-8';
+import './js/module-9';
+import './js/module-10';
+import './js/module-11';
