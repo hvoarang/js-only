@@ -42,18 +42,18 @@ const loginPassword = function (admin, user) {
      
 };
 
-const fn1 = function () {
+const fnA = function () {
   console.log("function-1");
-fc2();
+fnB();
 };
 
-const fn2 = function () {
+const fnB = function () {
   console.log("function-2");
-fc3();
+fnC();
 };
 
-const fn3 = function () {
+const fnC = function () {
   console.log("function-3");
 };
 
-fn1();
+fnA();
