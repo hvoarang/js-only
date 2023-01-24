@@ -1,14 +1,24 @@
 .js__one {
     display: flex;
-    width: 1600px;
-    align-items: center;
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
+    padding: 10px 10px;
+    background-color: #fcfcfc;
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 1280px;
+    }
 }
 .js__one-h1 {
-}
-.js__title {
+    padding: 20px;
 }
 .js__one-h2 {
+    padding: 20px 20px;
+}
+.js__title {
+    padding: 20px;
 }
