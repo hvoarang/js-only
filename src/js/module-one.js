@@ -24,36 +24,39 @@
 // }
 // calcNum('price');
 
-const add = function (a, b, c) {
-  console.log('total:');
-  return a + b + c;
-};
+// const add = function (a, b, c) {
+//   console.log('total:');
+//   return a + b + c;
+// };
 
-const add1 = add(1, 2, 3);
-console.log('add1:', add1);
+// const add1 = add(1, 2, 3);
+// console.log('add1:', add1);
 
-const add2 = add((1, 2, 3) * 2);
-console.log('add2:', add2);
+// const add2 = add((1, 2, 3) * 2);
+// console.log('add2:', add2);
 
-const loginPassword = function (admin, user) {
-  const ADMIN_PASSWORD = "";
-  let i = 0;
-  for (let i = 0; i >= ADMIN_PASSWORD.length; i++)
+// const loginPassword = function (admin, user) {
+//   const ADMIN_PASSWORD = "";
+//   let i = 0;
+//   for (let i = 0; i >= ADMIN_PASSWORD.length; i++)
      
-};
+// };
 
-const fnA = function () {
-  console.log("function-1");
-fnB();
-};
+// // стек вызовов функций
 
-const fnB = function () {
-  console.log("function-2");
-fnC();
-};
+// const fnA = function () {
+//   console.log("function-1");
+// fnB();
+// };
 
-const fnC = function () {
-  console.log("function-3");
-};
+// const fnB = function () {
+//   console.log("function-2");
+// fnC();
+// };
 
-fnA();
+// const fnC = function () {
+//   console.log("function-3");
+
+// };
+
+// fnA();
