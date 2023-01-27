@@ -1,1 +1,0 @@
-{"mappings":"AACAA,QAAQC,IADA","sources":["src/js/module-two.js"],"sourcesContent":["let i = 20;\nconsole.log(i);\n"],"names":["console","log"],"version":3,"file":"index.3a177d63.js.map"}
