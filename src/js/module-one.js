@@ -91,11 +91,37 @@
 //  если логина нет, вывести сообщение "пользователь `${login}` не найден"
 //  если логин найден, вывести сообщение "пользователь `${login}` найден"
 
-const logins = ['123f1f', '12f23f2', 'f132134', '1324f1f3', '12f1f34f'];
-const findLogin = '12f1f34f';
+// const logins = ['123f1f', '12f23f2', 'f132134', '1324f1f3', '12f1f34f'];
+// const findLogin = '12f1f34f';
 
-const message = logins.includes(findLogin)
-  ? `Найден ${findLogin}`
-  : `не найден ${findLogin}`;
+// const message = logins.includes(findLogin)
+//   ? `Найден ${findLogin}`
+//   : `не найден ${findLogin}`;
 
-console.log(message);
+// console.log(message);
+
+// const findToLogin = function (allLogins, findLogin) {
+//   console.log(allLogins);
+// };
+
+// console.log(findToLogin(logins, '123f1f'));
+// console.log(findToLogin(logins, '12f23f2'));
+// console.log(findToLogin(logins, 'f132134'));
+// console.log(findToLogin(logins, '1324f1f3'));
+// console.log(findToLogin(logins, '12f1f34f'));
+
+// набор паролей
+const logins = ['21f1f412421', '21f112321', '21f12321', '21f1f3f1'];
+const findLogin = function (allLogins, loginToFind) {
+  for (const login of allLogins) {
+    if (login === loginToFind) {
+      return `pass  ${loginToFind} access`;
+    }
+  }
+  return `pass ${loginToFind} denied`;
+};
+// логируем массив в "()" указываем 2 параметра
+console.log(findLogin(logins, '21f1f4212421'));
+console.log(findLogin(logins, '21f112321'));
+console.log(findLogin(logins, '21f12321'));
+console.log(findLogin(logins, '21f1f3f1'));
