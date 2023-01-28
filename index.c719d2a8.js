@@ -1,0 +1,2 @@
+!function(){var o=["21f1f412421","21f112321","21f12321","21f1f3f1"],n=function(o,n){var f=!0,l=!1,e=void 0;try{for(var c,r=o[Symbol.iterator]();!(f=(c=r.next()).done);f=!0){if(c.value===n)return"login access: online  ".concat(n)}}catch(o){l=!0,e=o}finally{try{f||null==r.return||r.return()}finally{if(l)throw e}}return"login access: denied ".concat(n)};console.log(n(o,"21f1f4212421")),console.log(n(o,"21f112321")),console.log(n(o,"21f12321")),console.log(n(o,"21f1f3f1"));console.log(20)}();
+//# sourceMappingURL=index.c719d2a8.js.map

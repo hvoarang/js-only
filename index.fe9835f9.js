@@ -1,2 +1,0 @@
-!function(){var o=["21f1f412421","21f112321","21f12321","21f1f3f1"],f=function(o,f){var n=!0,l=!1,r=void 0;try{for(var e,c=o[Symbol.iterator]();!(n=(e=c.next()).done);n=!0){if(e.value===f)return"pass  ".concat(f," access")}}catch(o){l=!0,r=o}finally{try{n||null==c.return||c.return()}finally{if(l)throw r}}return"pass ".concat(f," denied")};console.log(f(o,"21f1f4212421")),console.log(f(o,"21f112321")),console.log(f(o,"21f12321")),console.log(f(o,"21f1f3f1"));console.log(20)}();
-//# sourceMappingURL=index.fe9835f9.js.map
