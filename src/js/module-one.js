@@ -87,43 +87,26 @@
 // logItems([4, 5, 6]);
 // logItems(['seven', 'eght', 'nine']);
 
-// напиши функцию findLogin(allLogins, login) для поиска логина
-//  если логина нет, вывести сообщение "пользователь `${login}` не найден"
-//  если логин найден, вывести сообщение "пользователь `${login}` найден"
+// напиши функцию findPass(allPass, passFind) для поиска логина
+//  если логина нет, вывести сообщение "пользователь `${passFind}` не найден"
+//  если логин найден, вывести сообщение "пользователь `${passFind}` найден"
 
-// const logins = ['123f1f', '12f23f2', 'f132134', '1324f1f3', '12f1f34f'];
-// const findLogin = '12f1f34f';
-
-// const message = logins.includes(findLogin)
-//   ? `Найден ${findLogin}`
-//   : `не найден ${findLogin}`;
-
-// console.log(message);
-
-// const findToLogin = function (allLogins, findLogin) {
-//   console.log(allLogins);
-// };
-
-// console.log(findToLogin(logins, '123f1f'));
-// console.log(findToLogin(logins, '12f23f2'));
-// console.log(findToLogin(logins, 'f132134'));
-// console.log(findToLogin(logins, '1324f1f3'));
-// console.log(findToLogin(logins, '12f1f34f'));
-
-// набор паролей
-const logins = ['21f1f412421', '21f112321', '21f12321', '21f1f3f1'];
-
-// функция проверки пароля
-const findLogin = function (allLogins, loginToFind) {
-  for (const login of allLogins) {
-    if (login === loginToFind) {
-      return `login access: online  ${loginToFind}`;
+// 1.объявляем переменную с массивом паролей ['','']
+const allPass = ['123@%!@##%%%11', '12!@!@#f11', '1rf13f4@33r'];
+// 2.объяляем функцию с аргументами (массив паролей, пароль найден)
+const findPass = function (allPass, passFind) {
+  // 3.через for...of перебираем итерируемые объекты
+  for (const pass of allPass) {
+    // 4.булевая проверка
+    if (pass === passFind) {
+      // 5.возвращаем проверку из функции
+      return `find ${passFind}`;
     }
   }
-  return `login access: denied ${loginToFind}`;
+  // 6.возврат если проверка не прошла
+  return `not find ${passFind}`;
 };
-// логируем проверку в параметре указываем переменную с массивом паролей и варианты паролей в ""
-console.log(findLogin(logins, '21f1f4212421'));
-console.log(findLogin(logins, '21f112321'));
-console.log(findLogin(logins, '21f12321'));
-console.log(findLogin(logins, '21f1f3f1'));
+// 7.объявляем лог внутри которого(имя функции(имя массива, "один элемент массива"))
+console.log(findPass(allPass, '12cvbcvbf11'));
+console.log(findPass(allPass, '12!@!@#f11'));
+console.log(findPass(allPass, '123@%!@##%%%11'));
