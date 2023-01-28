@@ -112,15 +112,17 @@
 
 // набор паролей
 const logins = ['21f1f412421', '21f112321', '21f12321', '21f1f3f1'];
+
+// функция проверки пароля
 const findLogin = function (allLogins, loginToFind) {
   for (const login of allLogins) {
     if (login === loginToFind) {
-      return `pass  ${loginToFind} access`;
+      return `login access: online  ${loginToFind}`;
     }
   }
-  return `pass ${loginToFind} denied`;
+  return `login access: denied ${loginToFind}`;
 };
-// логируем массив в "()" указываем 2 параметра
+// логируем проверку в параметре указываем переменную с массивом паролей и варианты паролей в ""
 console.log(findLogin(logins, '21f1f4212421'));
 console.log(findLogin(logins, '21f112321'));
 console.log(findLogin(logins, '21f12321'));
