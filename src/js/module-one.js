@@ -110,16 +110,3 @@ const findPass = function (allPass, passFind) {
 console.log(findPass(allPass, '12cvbcvbf11'));
 console.log(findPass(allPass, '12!@!@#f11'));
 console.log(findPass(allPass, '123@%!@##%%%11'));
-
-const itemsArr = ['123c144v4', '1232v4', '123c1454'];
-const checkItems = function (countItem, findItem) {
-  for (const countItem of itemsArr) {
-    if (countItem === findItem) {
-      return `item: ${findItem} - find`;
-    }
-  }
-  return `item: ${findItem} - not found`;
-};
-console.log(checkItems(itemsArr, '123c144v4'));
-console.log(checkItems(itemsArr, '1232v4'));
-console.log(checkItems(itemsArr, '122c144v4'));
