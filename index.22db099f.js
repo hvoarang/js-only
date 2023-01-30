@@ -1,0 +1,2 @@
+const o=["123@%!@##%%%11","12!@!@#f11","1rf13f4@33r"],n=function(o,n){for(const c of o)if(c===n)return`find ${n}`;return`not find ${n}`};console.log(n(o,"12cvbcvbf11")),console.log(n(o,"12!@!@#f11")),console.log(n(o,"123@%!@##%%%11"));const c=["123c144v4","1232v4","123c1454"],f=function(o,n){for(const o of c)if(o===n)return`item: ${n} - find`;return`item: ${n} - not found`};console.log(f(0,"123c144v4")),console.log(f(0,"1232v4")),console.log(f(0,"122c144v4"));console.log(20);
+//# sourceMappingURL=index.22db099f.js.map
