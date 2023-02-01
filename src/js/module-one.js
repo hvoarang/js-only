@@ -42,33 +42,33 @@
 
 // };
 
-// // стек вызовов функций
+//  стек вызовов функций
 
-// const fnA = function () {
-//   console.log('Total one:');
-//   return fnB();
-// };
-// const fnB = function () {
-//   console.log('Total two:');
-//   return fnC();
-// };
-// const fnC = function () {
-//   console.log('Total three:');
-// };
-// fnA();
+const fnA = function () {
+  console.log('Total one:');
+  return fnB();
+};
+const fnB = function () {
+  console.log('Total two:');
+  return fnC();
+};
+const fnC = function () {
+  console.log('Total three:');
+};
+fnA();
 
 //  сложение массива
-// const totalPrice = function (items) {
-//   let total = 0;
-//   for (const item of items) {
-//     total += item;
-//   }
-//   return total;
-// };
+const totalPrice = function (items) {
+  let total = 0;
+  for (const item of items) {
+    total += item;
+  }
+  return total;
+};
 
-// const t1 = totalPrice([21, 34, 123]);
-// const t2 = totalPrice([12, 12, 1223]);
-// const t3 = totalPrice([15, 23, 123]);
+const t1 = totalPrice([21, 34, 123]);
+const t2 = totalPrice([12, 12, 1223]);
+const t3 = totalPrice([15, 23, 123]);
 
 // console.log('t1:', t1);
 // console.log('t2:', t2);
@@ -110,3 +110,20 @@ const findPass = function (allPass, passFind) {
 console.log(findPass(allPass, '12cvbcvbf11'));
 console.log(findPass(allPass, '12!@!@#f11'));
 console.log(findPass(allPass, '123@%!@##%%%11'));
+
+const arr = ['123', 'lkimv2', 'knjunu'];
+const message = arr.includes(find) ? `find ${find}` : `not ${find}`;
+
+const box = {
+  item: 'asd',
+  name: 'aasdf',
+  secondName: 'asd',
+};
+
+const fn = function (a, b, c, ...args) {
+  console.log(`${a} ${b} ${c}`, args);
+};
+
+fn('one', 1, 2, 3);
+fn('two', 4, 5, 6);
+fn('three', 7, 8, 9);
