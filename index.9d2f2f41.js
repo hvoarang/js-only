@@ -1,2 +1,0 @@
-!function(){var o=["123@%!@##%%%11","12!@!@#f11","1rf13f4@33r"],n=function(o,n){var r=!0,l=!1,t=void 0;try{for(var c,f=o[Symbol.iterator]();!(r=(c=f.next()).done);r=!0){if(c.value===n)return"find ".concat(n)}}catch(o){l=!0,t=o}finally{try{r||null==f.return||f.return()}finally{if(l)throw t}}return"not find ".concat(n)};console.log(n(o,"12cvbcvbf11")),console.log(n(o,"12!@!@#f11")),console.log(n(o,"123@%!@##%%%11"));console.log(20)}();
-//# sourceMappingURL=index.9d2f2f41.js.map
