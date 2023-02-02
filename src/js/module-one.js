@@ -127,3 +127,33 @@ const fn = function (a, b, c, ...args) {
 fn('one', 1, 2, 3);
 fn('two', 4, 5, 6);
 fn('three', 7, 8, 9);
+
+const add = function (...args) {
+  console.log(args);
+  let total = 0;
+  for (const arg of args) {
+    total += arg;
+  }
+  return total;
+};
+
+console.log(add(1, 2, 3));
+console.log(add(1, 2, 3));
+console.log(add(1, 2, 3));
+
+// фильтрация и группировака элементов и массивов
+const filterNumbers = function (arr, ...args) {
+  console.log('arr:', arr);
+  console.log('args:', args);
+
+  const unqElement = [];
+
+  for (const element of arr) {
+    if (args.includes(element)) {
+      unqElement.push(element);
+      console.log(`${element} yes`);
+    }
+  }
+  return unqElement;
+};
+console.log(filterNumbers([1, 2, 3], 1, 2, 3, 5, 6, 7, 8, 9));
