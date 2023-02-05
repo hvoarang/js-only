@@ -157,3 +157,10 @@ const filterNumbers = function (arr, ...args) {
   return unqElement;
 };
 console.log(filterNumbers([1, 2, 3], 1, 2, 3, 5, 6, 7, 8, 9));
+
+const fnArr = function (a, b, c, ...args) {
+  console.log(`${a}, ${b}, ${c} `);
+  console.log(args);
+};
+
+fnArr('1, 2, 3', 4, 5, 6, 7, 8, 9);
