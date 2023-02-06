@@ -164,3 +164,21 @@ const fnArr = function (a, b, c, ...args) {
 };
 
 fnArr('1, 2, 3', 4, 5, 6, 7, 8, 9);
+
+// суммируем все аргументы (произвольное количество)
+const add = function (...args) {
+  console.log(args);
+
+  let total = 0;
+
+  for (const arg of args) {
+    total += arg;
+  }
+
+  // возвращаем результат
+  return total;
+};
+
+//вывод аргументов в лог console.log(function(arguments));
+console.log(add(4, 5, 6, 7, 8, 9));
+console.log(add(4, 5, 6, 7, 8, 9, 12, 4314));
