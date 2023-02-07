@@ -132,3 +132,12 @@ const getFriendsByOnlineStatus = function (allFriends) {
 };
 
 console.log(getFriendsByOnlineStatus(friends));
+
+const x = {
+  a: 1,
+  b: 2,
+  c: 3,
+  d: 4,
+};
+
+console.log(Object.keys(x).length);
