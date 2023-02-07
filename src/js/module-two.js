@@ -142,22 +142,22 @@
 
 // console.log(Object.keys(x).length);
 
+const cart = {
+  item: [],
+  getItems() {
+    return this.items;
+  },
+  add(product) {},
+  remove(productName) {},
+  clear() {},
+  countTotalPrive() {},
+  increaseQuantity(productName) {},
+  decreaseQuantity(productName) {},
+};
 
-const cart = { 
-  item:[],
-  getItems(){},
-  add(product){},
-  remove(productName){}:,
-  clear(){},
-  countTotalPrive(){},
-  increaseQuantity(productName){},
-  decreaseQuantity(productName){},
-  
-}
+console.table(cart.getItems());
 
-console.table(cart.get.items());
-
-cart.add({name: 'apple', prive: 50})
-cart.add({name: 'lime', prive: 60})
-cart.add({name: 'carrot', prive: 70})
-cart.add({name: 'charry', prive: 80})
+cart.add({ name: 'apple', prive: 50 });
+cart.add({ name: 'lime', prive: 60 });
+cart.add({ name: 'carrot', prive: 70 });
+cart.add({ name: 'charry', prive: 80 });
