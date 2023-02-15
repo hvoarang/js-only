@@ -157,7 +157,9 @@ const cart = {
 
 console.table(cart.getItems());
 
-cart.add({ name: 'apple', prive: 50 });
-cart.add({ name: 'lime', prive: 60 });
-cart.add({ name: 'carrot', prive: 70 });
-cart.add({ name: 'charry', prive: 80 });
+cart.add({ name: 'apple', price: 50 });
+cart.add({ name: 'lime', price: 60 });
+cart.add({ name: 'carrot', price: 70 });
+cart.add({ name: 'charry', price: 80 });
+
+console.log('`${}:`');
