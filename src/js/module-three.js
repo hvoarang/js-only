@@ -39,6 +39,23 @@
 // console.log("a:", a, "b:", b)
 
 // const numbers = [...1, 2, 3].concat([12, 21, 31], [124, 4123, 512]);
-const numbers = [1, 2, 3, 12, 21, ...[31], [124, 4123, 512]];
+// const temp = [1, 2, 3, 12, 21, 0.31, 124, 4123, 512];
 
-console.log(numbers);
+// console.log(Math.max(...temp));
+// console.log(Math.min(...temp));
+
+const defoultSettings = {
+  theme: 'light',
+  showNotification: 'true',
+  hideSideBar: 'false',
+};
+const userSettings = {
+  showNotification: 'false',
+  hideSideBar: 'true',
+};
+const finalSettings = {
+  ...defoultSettings,
+  ...userSettings,
+};
+
+console.log('finalSettings:', finalSettings);
