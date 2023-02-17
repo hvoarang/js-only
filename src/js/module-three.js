@@ -219,23 +219,77 @@
 //   return x * y;
 // });
 
-const buttonRef = document.querySelector('.js-button');
+// const buttonRef = document.querySelector('.js-button');
 
-const handButtonClick = function () {
-  console.log('Click on button' + Date.now);
+// const handButtonClick = function () {
+//   console.log('Click on button' + Date.now);
+// };
+
+// buttonRef.addEventListener('click', handButtonClick);
+
+// const onGetPossitinSusses = function (positin) {
+//   console.log('тут onGetPossitinSusses');
+//   console.log(positin);
+// };
+// const onGetPossitinError = function (error) {
+//   console.log(error);
+// };
+
+// window.navigator.geolocation.getCurrentPosition(
+//   onGetPossitinSusses,
+//   onGetPossitinError
+// );
+
+// const callback = function () {
+//   console.log('after 3 sec in callback timeqout');
+// };
+// console.log('в коде перед таймаутом');
+
+// setTimeout(callback, 2000);
+
+// console.log('в коде после таймаутом');
+
+const onRequestSucsess = function (respone) {
+  console.log('Call onRequestSucsess after sucsess respone backand ');
+  console.log(respone);
 };
 
-buttonRef.addEventListener('click', handButtonClick);
+// fetch('https://pokeapi.co/api/v2/pokemon')
+//   .then(res => res.json())
+//   .then(onRequestSucsess);
 
-const onGetPossitinSusses = function (positin) {
-  console.log('тут onGetPossitinSusses');
-  console.log(positin);
-};
-const onGetPossitinError = function (error) {
-  console.log(error);
+const filter = function (array, test) {
+  const filteredArray = [];
+
+  for (const el of array) {
+    console.log(el);
+    console.log(test(el));
+  }
+  return filteredArray;
 };
 
-window.navigator.geolocation.getCurrentPosition(
-  onGetPossitinSusses,
-  onGetPossitinError
-);
+const callback1 = function (value) {
+  return value => 3;
+};
+
+const r1 = filter([1, 2, 3, 4, 5, 6, 7], callback1);
+console.log(r1);
+
+const callback2 = function (value) {
+  return value <= 4;
+};
+
+const r2 = filter([1, 2, 3, 4, 5, 6, 7], callback2);
+console.log(r2);
+
+const fruits = [
+  { name: 'apple', quantity: 200, isFresh: true },
+  { name: 'chree', quantity: 500, isFresh: false },
+  { name: 'lime', quantity: 300, isFresh: true },
+];
+const getFruitWithQuantity = function (fruit) {
+  return fruit.quantity >= 120;
+};
+
+const r3 = filter(fruits, getFruitWithQuantity);
+console.log(r3);
