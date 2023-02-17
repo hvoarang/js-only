@@ -140,58 +140,70 @@
 
 // showPlaylist(plailist);
 
-const cart = {
-  items: [],
-  getItems() {
-    return this.items;
-  },
-  add(product) {
-    for (const item of this.items) {
-      if (item.name === product.name) {
-        item.quatity += 1;
-        return;
-      }
-    }
-    const newProduct = {
-      ...product,
-      quatity: 1,
-    };
-    this.items.push(newProduct);
-  },
-  remove(producteName) {
-    const { items } = this;
+// const cart = {
+//   items: [],
+//   getItems() {
+//     return this.items;
+//   },
+//   add(product) {
+//     for (const item of this.items) {
+//       if (item.name === product.name) {
+//         item.quatity += 1;
+//         return;
+//       }
+//     }
+//     const newProduct = {
+//       ...product,
+//       quatity: 1,
+//     };
+//     this.items.push(newProduct);
+//   },
+//   remove(producteName) {
+//     const { items } = this;
 
-    for (let i = 0; i < items.length; i += 1) {
-      const { name } = items[i];
+//     for (let i = 0; i < items.length; i += 1) {
+//       const { name } = items[i];
 
-      if (producteName === item.names) {
-        console.log('find this product', producteName);
+//       if (producteName === item.names) {
+//         console.log('find this product', producteName);
 
-        console.log(i);
-        console.log('asdw');
-        items.splice(i, 1);
-      }
-    }
-  },
-  clear() {},
-  coutTotalPrice() {
-    const { items } = this;
-    let total = 0;
+//         console.log(i);
+//         console.log('asdw');
+//         items.splice(i, 1);
+//       }
+//     }
+//   },
+//   clear() {},
+//   coutTotalPrice() {
+//     const { items } = this;
+//     let total = 0;
 
-    for (const { price, quatity } of items) {
-      total += price * quatity;
-    }
-    return total;
-  },
-  increaseQuantity(productName) {},
-  decreaseQuantity(productName) {},
+//     for (const { price, quatity } of items) {
+//       total += price * quatity;
+//     }
+//     return total;
+//   },
+//   increaseQuantity(productName) {},
+//   decreaseQuantity(productName) {},
+// };
+// console.log(total);
+// console.log(cart.getItems());
+
+// cart.add({ name: 'one', prive: 40 });
+// cart.add({ name: 'two', prive: 60 });
+// cart.add({ name: 'three', prive: 70 });
+// cart.add({ name: 'for', prive: 80 });
+
+// console.log(cart.getItems());
+
+// callback
+const doMath = function (a, b, callback) {
+  const result = callback(a, b);
+
+  console.log('result:', result);
 };
-console.log(total);
-console.log(cart.getItems());
 
-cart.add({ name: 'one', prive: 40 });
-cart.add({ name: 'two', prive: 60 });
-cart.add({ name: 'three', prive: 70 });
-cart.add({ name: 'for', prive: 80 });
-
-console.log(cart.getItems());
+const add = function (x, y) {
+  return x + y;
+};
+doMath(2, 5, add);
