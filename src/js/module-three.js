@@ -296,20 +296,50 @@
 
 // замыкание
 
-const fnA = function (parameter) {
-  const innerVariable = 'value fnA';
+// const fnA = function (parameter) {
+//   const innerVariable = 'value fnA';
 
-  const innerFunction = function () {
-    console.log(parameter);
-    console.log(innerVariable);
-    console.log('call innerFunction');
+//   const innerFunction = function () {
+//     console.log(parameter);
+//     console.log(innerVariable);
+//     console.log('call innerFunction');
+//   };
+
+//   return innerFunction;
+// };
+
+// const fnB = fnA(444);
+
+// fnB();
+
+// console.log('fnB:', fnB);
+
+// const makeShef = function (name) {
+//   const makeDish = function (dish) {
+//     console.log(`${name} catch ${dish}`);
+//   };
+//   return makeDish;
+// };
+
+// mango('apple');
+
+// замыкание чисел
+const rounder = function (places) {
+  return function (number) {
+    return Number(number.toFixed(places));
   };
-
-  return innerFunction;
 };
 
-const fnB = fnA(444);
+const rounder2 = rounder(2);
+const rounder3 = rounder(5);
 
-fnB();
+console.dir(rounder2);
+console.dir(rounder3);
 
-console.log('fnB:', fnB);
+console.log(rounder2(3.1231));
+console.log(rounder3(3.12312));
+console.log(rounder2(3.1123231));
+console.log(rounder3(3.1231));
+console.log(rounder2(322.1231));
+console.log(rounder3(34.1231));
+console.log(rounder2(143.1212331));
