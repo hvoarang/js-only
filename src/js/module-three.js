@@ -196,14 +196,46 @@
 
 // console.log(cart.getItems());
 
-// callback
-const doMath = function (a, b, callback) {
-  const result = callback(a, b);
+// // callback
+// const doMath = function (a, b, callback) {
+//   // передачал аргументов
+//   const result = callback(a, b);
 
-  console.log('result:', result);
+//   console.log('result:', result);
+// };
+
+// const add = function (x, y) {
+//   return x + y;
+// };
+// const newNum = function (x, y) {
+//   return x * y;
+// };
+
+// // инлайн функции
+// doMath(2, 5, function (x, y) {
+//   return x + y;
+// });
+// doMath(12, 5, function (x, y) {
+//   return x * y;
+// });
+
+const buttonRef = document.querySelector('.js-button');
+
+const handButtonClick = function () {
+  console.log('Click on button' + Date.now);
 };
 
-const add = function (x, y) {
-  return x + y;
+buttonRef.addEventListener('click', handButtonClick);
+
+const onGetPossitinSusses = function (positin) {
+  console.log('тут onGetPossitinSusses');
+  console.log(positin);
 };
-doMath(2, 5, add);
+const onGetPossitinError = function (error) {
+  console.log(error);
+};
+
+window.navigator.geolocation.getCurrentPosition(
+  onGetPossitinSusses,
+  onGetPossitinError
+);
