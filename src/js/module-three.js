@@ -324,22 +324,25 @@
 // mango('apple');
 
 // замыкание чисел
-const rounder = function (places) {
-  return function (number) {
-    return Number(number.toFixed(places));
-  };
-};
+// const rounder = function (places) {
+//   return function (number) {
+//     return Number(number.toFixed(places));
+//   };
+// };
 
-const rounder2 = rounder(2);
-const rounder3 = rounder(5);
+// const rounder2 = rounder(2);
+// const rounder3 = rounder(5);
 
-console.dir(rounder2);
-console.dir(rounder3);
+// console.dir(rounder2);
+// console.dir(rounder3);
 
-console.log(rounder2(3.1231));
-console.log(rounder3(3.12312));
-console.log(rounder2(3.1123231));
-console.log(rounder3(3.1231));
-console.log(rounder2(322.1231));
-console.log(rounder3(34.1231));
-console.log(rounder2(143.1212331));
+// console.log(rounder2(3.1231));
+// console.log(rounder3(3.12312));
+// console.log(rounder2(3.1123231));
+// console.log(rounder3(3.1231));
+// console.log(rounder2(322.1231));
+// console.log(rounder3(34.1231));
+// console.log(rounder2(143.1212331));
+
+
+const salaryManagerFactory = function(employeeName)
