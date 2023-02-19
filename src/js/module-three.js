@@ -344,5 +344,6 @@
 // console.log(rounder3(34.1231));
 // console.log(rounder2(143.1212331));
 
+// стрелочные функции
 
-const salaryManagerFactory = function(employeeName)
+const multy = [1, 23, 4, 5, 6, 6, 7];
