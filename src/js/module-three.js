@@ -346,4 +346,23 @@
 
 // стрелочные функции
 
-const multy = [1, 23, 4, 5, 6, 6, 7];
+// const numbers = [5, 4, 8, 123, 1232, 3, 21];
+
+// const numbersNew = numbers.map(function (number) {
+//   console.log('number:', number);
+//   return number * 2;
+// });
+// console.log('numbers:', numbers);
+// console.log('numberNew:', numbersNew);
+
+const players = [
+  { id: 'player-1', name: 'mango', timePlayed: 110, points: 14, online: false },
+  { id: 'player-2', name: 'poly', timePlayed: 210, points: 24, online: true },
+  { id: 'player-3', name: 'jack', timePlayed: 310, points: 34, online: false },
+  { id: 'player-4', name: 'den', timePlayed: 410, points: 44, online: true },
+  { id: 'player-5', name: 'jon', timePlayed: 510, points: 54, online: false },
+];
+const isAllOnline = players.every(player => player.oline);
+
+const isAnyOnline = players.some(player => player.online);
+console.log('isAnyOnline', isAnyOnline);
