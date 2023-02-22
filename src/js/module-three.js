@@ -403,31 +403,50 @@
 
 // user.showUserTag();
 
-const counter = {
-  value: 0,
-  increment() {
-    console.log('increment -> this', this);
-    this.value += 1;
-  },
-  decrement() {
-    console.log('decrement -> this', this);
-    this.value -= 1;
-  },
+// const counter = {
+//   value: 0,
+//   increment() {
+//     console.log('increment -> this', this);
+//     this.value += 1;
+//   },
+//   decrement() {
+//     console.log('decrement -> this', this);
+//     this.value -= 1;
+//   },
+// };
+
+// const decrementBtn = document.querySelector('.js-decrement');
+// const incrementBtn = document.querySelector('.js-increment');
+// const valueEl = document.querySelector('.js-value');
+
+// decrementBtn.addEventListener('click', function () {
+//   console.log('decrement -');
+
+//   counter.document() | console.log(counter);
+//   valueEl.textContent = counter.value;
+// });
+// incrementBtn.addEventListener('click', function () {
+//   console.log('increment +');
+
+//   counter.document() | console.log(counter);
+//   valueEl.textContent = counter.value;
+// });
+
+// прототипное наследование
+const CounterPlugin = function ({ initialvalue = 0, step = 1 } = {}) {
+  this._value = initialvalue;
+  this._step = step;
 };
 
-const decrementBtn = document.querySelector('.js-decrement');
-const incrementBtn = document.querySelector('.js-increment');
-const valueEl = document.querySelector('.js-value');
-
-decrementBtn.addEventListener('click', function () {
-  console.log('Increment -');
-
-  counter.document() | console.log(counter);
-  valueEl.textContent = counter.value;
-});
-incrementBtn.addEventListener('click', function () {
-  console.log('Increment +');
-
-  counter.document() | console.log(counter);
-  valueEl.textContent = counter.value;
-});
+CounterPlugin.prototype.increment = function () {
+  this._value += this._step = this._step;
+};
+CounterPlugin.prototype.decrement = function () {
+  this._value -= this._step = this._step;
+};
+const counter = new CounterPlugin({ step: 100 });
+console.log(counter);
+counter.increment();
+counter.decrement();
+counter.decrement();
+console.log(counter);
