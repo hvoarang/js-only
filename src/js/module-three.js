@@ -450,3 +450,15 @@ counter.increment();
 counter.decrement();
 counter.decrement();
 console.log(counter);
+
+class Berserc extends Warrior {
+  constructor({ warcry, ...restProps } = {}) {
+    super(restProps);
+
+    this.warcry = warcry;
+  }
+
+  babyRage() {
+    console.log(this.warcry);
+  }
+}
