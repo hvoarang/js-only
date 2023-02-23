@@ -1,24 +1,5 @@
-.js__one {
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px 10px;
-    background-color: #fcfcfc;
-    @media screen and (min-width: 768px) {
-        width: 768px;
-    }
+.section {
+    background-color: #a1a1a1;
 
-    @media screen and (min-width: 1280px) {
-        width: 1280px;
-    }
-}
-.js__one-h1 {
-    padding: 20px;
-}
-.js__one-h2 {
-    padding: 20px 20px;
-}
-.js__title {
-    padding: 20px;
+    padding: 50%;
 }
