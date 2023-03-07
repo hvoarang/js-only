@@ -20,4 +20,4 @@ for (let i = 0; i < arr.length; i += 1) {
   console.log(arr[i]);
   num = arr[i].push;
 }
-console.log(num);
+console.log(arr[i]);
