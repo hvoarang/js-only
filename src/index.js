@@ -10,3 +10,4 @@ import './js/module-eight';
 import './js/module-nine';
 import './js/module-ten';
 import './js/module-eleven';
+import './js/module-eleven';
