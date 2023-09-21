@@ -4,11 +4,17 @@
     --gray-text-color: #5f6775;
     --orange-text-color: #fd5103;
     --orange-auxiliry-color: #fe7031;
+    --border-color: #afb1b8;
 }
 
 body {
-    font-family: Poppins;
+    background-image: url(/src/images/mgs4-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: JetBrains Mono;
+    font-size: 20px;
     font-style: normal;
+    color: #fcfcfc;
 }
 
 html {

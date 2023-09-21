@@ -1,5 +1,6 @@
-.section {
-    background-color: #a1b2c3;
-
-    padding: 40%;
+.box {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    margin-top: 20px;
+    backdrop-filter: blur(100px);
 }
