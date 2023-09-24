@@ -1,2 +1,0 @@
-.container{max-width:1200px;width:100%;margin:0 auto;padding-left:15px;padding-right:15px}@media screen and (min-width:480px){.container{width:100%;height:100%;padding:0 20px}}@media screen and (min-width:768px){.container{width:100%;height:100%;padding:0 33px}}@media screen and (min-width:1200px){.container{width:100%;height:100%}}.box{border:1px solid var(--border-color);-webkit-backdrop-filter:blur(100px);-webkit-backdrop-filter:blur(100px);backdrop-filter:blur(100px);border-radius:8px;margin-top:20px}
-/*# sourceMappingURL=index.38c7fa4e.css.map */
