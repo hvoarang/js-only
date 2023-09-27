@@ -1,2 +1,0 @@
-!function(){for(var o={},e=1;e<=10;e++)id=e,o[id]={},o[id].userName=prompt("Enter name"),o[id].userAge=+prompt("Enter age");for(var l in console.log(o),o)console.log("User ".concat(l)),console.log("Name ".concat(o[kay].userName)),console.log("Age ".concat(o[kay].userAge));console.log(o);var n=["Mango","Poly","Ajax"];console.log(n[0]),console.log(n[1]),console.log(n.length);var g=n.length-1;console.log(n[g]),console.log(n.push());for(var c=[1,2,3],s=0;s<c.length;s+=1)console.log(c[s]),c[s].push;console.log(c[i])}();
-//# sourceMappingURL=index.c8ac0ca3.js.map

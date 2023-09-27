@@ -1,2 +1,0 @@
-const o={};for(let e=1;e<=10;e++)id=e,o[id]={},o[id].userName=prompt("Enter name"),o[id].userAge=+prompt("Enter age");console.log(o);for(let e in o)console.log(`User ${e}`),console.log(`Name ${o[kay].userName}`),console.log(`Age ${o[kay].userAge}`);console.log(o);const e=["Mango","Poly","Ajax"];console.log(e[0]),console.log(e[1]),console.log(e.length);const l=e.length-1;console.log(e[l]),console.log(e.push());const n=[1,2,3];let s=[];for(let o=0;o<n.length;o+=1)console.log(n[o]),s=n[o].push;console.log(n[i]);
-//# sourceMappingURL=index.0bf1eaee.js.map
