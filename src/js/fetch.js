@@ -5,3 +5,4 @@ array2.push(4);
 
 console.log(array1);
 console.log(array2);
+z;
