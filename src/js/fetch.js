@@ -6,4 +6,4 @@ array2.push(4);
 console.log(`${array1} - massive one`);
 console.log(`${array2} - massive two`);
 
-console.log(array1.length - 1);
+console.log(array1.length - 2);
