@@ -11,9 +11,3 @@ console.log(clients.length);
 const lastElementIndex = clients.length - 1;
 console.log(clients[lastElementIndex]); //Ajax
 console.log(clients.push());
-
-const arr = [1, 2, 3, 4, 5];
-
-let sumArr = [];
-
-console.log(arr.length);
