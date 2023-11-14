@@ -8,7 +8,7 @@
 
 // console.log(array1.slice(3));
 
-const arr = [11, 22, 23, 4, 25, 62];
+const arr = [111, 22, 23, 4, 25, 62];
 
 // let newArr = arr.slice(0, 3, 12);
 
