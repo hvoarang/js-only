@@ -13,3 +13,6 @@ const arr = [11, 22, 23, 4, 25, 62];
 // let newArr = arr.slice(0, 3, 12);
 
 console.log(arr.splice(0, 12));
+
+let a = true + false;
+console.log(a);
