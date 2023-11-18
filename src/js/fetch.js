@@ -16,3 +16,9 @@ console.log(arr.splice(0, 12));
 
 let a = true + false;
 console.log(a);
+
+const x = 10;
+const y = 8;
+const z = x > y ? x : y;
+
+console.log(z);
