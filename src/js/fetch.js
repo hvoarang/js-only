@@ -6,5 +6,5 @@
 // console.log(`${array1} - massive one`);
 // console.log(`${array2} - massive two`);
 
-console.log(array1.slice(5));
+console.log(array1.slice(1));
 console.log(array1.slice(3));
