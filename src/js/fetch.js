@@ -1,4 +1,4 @@
-const array1 = [1, 22, 3, 3];
+const array1 = [11, 22, 32, 3];
 const array2 = array1;
 
 array2.push(5);
